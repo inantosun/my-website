@@ -17,3 +17,15 @@ int main(void) {
     printf("Sum is %d\n", sum);        /* print sum */
     return 0;
 }
+
+
+
+Enter first integer:
+4
+Enter second integer:
+5
+Sum is 9
+
+--------------------------------
+Process exited after 5.555 seconds with return value 0
+Press any key to continue . . .
