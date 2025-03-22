@@ -17,3 +17,13 @@ int main(void) {
 
     return 0;
 }
+
+
+
+Enter popularity: 5
+Enter size: 2
+Home value is: 1290000 TL
+
+--------------------------------
+Process exited after 5.711 seconds with return value 0
+Press any key to continue . . .
