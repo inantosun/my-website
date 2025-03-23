@@ -1,4 +1,4 @@
-/*Q4 part a */
+
 #include <stdio.h>
 #include <math.h>
 
@@ -41,7 +41,7 @@ Press any key to continue . . .
 
 
 
-/* Q4 part b */
+
     #include <stdio.h>
 #include <math.h>
 
