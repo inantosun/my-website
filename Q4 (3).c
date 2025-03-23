@@ -1,38 +1,75 @@
-/* Q4: Function Versions of Home Value Calculation */
-
+/*Q4 part a */
 #include <stdio.h>
 #include <math.h>
 
-// Part A: With return value
-int computeHomeValue(int popularity, int size) {
-    return (pow(popularity, 3) + pow(size, 2)) * 10000;
+int computeHomeValue (int popularity, int size);
+
+int main ()
+{
+
+    int popularity, size; 
+    
+    printf("Enter popularity : \n"); 
+    scanf("%d",&popularity);  
+
+    printf("Enter size : \n");  
+    scanf("%d",&size); 
+
+    printf("Home Value : %d \n" , computeHomeValue ( popularity , size ) );  
+
+    return 0;  
+
 }
 
-// Part B: Void function with internal scanf/printf
-void computeHomeValueVoid(void) {
-    int popularity, size;
-    long long homeValue;
-
-    printf("Enter popularity: ");
-    scanf("%d", &popularity);
-
-    printf("Enter size: ");
-    scanf("%d", &size);
-
-    homeValue = (pow(popularity, 3) + pow(size, 2)) * 10000;
-    printf("Home value is: %lld TL\n", homeValue);
+int computeHomeValue ( int popularity , int size )
+{
+    return (((pow( popularity , 3 ))  +  (pow(size , 2))) * 10000 ); 
 }
 
-int main(void) {
-    int pop, sz;
-    printf("Enter popularity: ");
-    scanf("%d", &pop);
 
-    printf("Enter size: ");
-    scanf("%d", &sz);
+Enter popularity :
+5
+Enter size :
+2
+Home Value : 1290000
 
-    printf("Home value is: %d TL\n", computeHomeValue(pop, sz));
+--------------------------------
+Process exited after 3.2 seconds with return value 0
+Press any key to continue . . .
 
-    computeHomeValueVoid();
-    return 0;
+
+
+
+
+/* Q4 part b */
+    #include <stdio.h>
+#include <math.h>
+
+void computeHomeValue (void);
+
+int main (void)
+{
+
+    computeHomeValue ();
+
+
+
+    return 0 ;
+} 
+
+void computeHomeValue (void)
+{
+    int popularity, size;  
+    int homeValue;
+
+    printf("Enter popularity : \n");  
+    scanf( "%d", &popularity );  
+
+    printf("Enter size : \n");  
+    scanf("%d", &size);  
+
+    homeValue = ( (pow(popularity,3) + pow(size, 2))* 10000 );  
+
+    printf("\nHome Value : %d \n", homeValue); 
 }
+
